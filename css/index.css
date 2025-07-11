@@ -1,0 +1,280 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Cairo';
+    box-sizing: border-box;
+    text-transform: capitalize;
+    scroll-behavior:smooth;
+}
+
+header {
+    background-color: #2c3e50;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    border-top: 7px solid crimson;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    z-index:2;
+
+}
+
+header div a {
+    color:white;
+    text-decoration:none;
+    font-size:22px;
+    margin:5px;
+    transition:ease-in-out 1.5s;
+}
+    header div a:hover {
+        color:crimson;
+
+    }
+
+.cursor_container{
+    
+    height:100vh;
+    display:flex;
+    align-items:center;
+    background-image:url('../img/web-designer-pune-background.jpg');
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+    background-blend-mode:overlay;
+    background-color:rgba(0,0,0,0.2);
+
+}
+.cursor_container div{
+    margin-left:80px;
+    color:white;
+}
+    .cursor_container div span {
+      
+        color: crimson;
+
+    }
+
+    .cursor_container div a {
+        color: white;
+        text-decoration: none;
+        border-radius: 10px 10px;
+        padding: 4PX 8px;
+        margin-top: 20px;
+        display: inline-block;
+        background-color: #52779B;
+        transition: ease-in-out 0.5s;
+    }
+        .cursor_container div a:hover {
+            color: #52779B;
+            background-color: white;
+            transform: scale(1.1);
+        }
+
+    .cursor_container div input {
+        margin-left:10px;
+        border-radius:5px;
+        border:none;
+        padding:5px; 
+        width:40%;
+    }
+    .cursor_container div input:focus {
+        border:none;
+        outline:none;
+    }
+
+    .services {
+        text-align: center;
+        padding: 20px 0;
+    }
+.services  h1{
+    color:crimson;
+    margin-top:20px;
+    margin-bottom:20px;
+}
+.services_container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+/*    gap:20px;*/
+    width:100%;
+}
+
+
+.service_card {
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+    width: 30%;
+    margin: 20px;
+    padding:20px;
+}
+.services h2 {
+    margin: 10px;
+    
+}
+.service_card p {
+    line-height: 1.6;
+    padding:0 45px;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: lowercase;
+
+}
+
+.service_card h2 {
+    margin-top:5px;
+    color: #52779B;
+}
+
+
+.service_card i {
+    margin-top: 20px;
+    color: #52779B  ;
+    font-size: 40px;
+    transition: ease-in-out 0.5s;
+}
+    .service_card i:hover {
+        transform: scale(1.5);
+        color: #85BCB7;
+    }
+
+
+
+
+
+
+
+.courses_container {
+    background-color: #2c3e50;
+    text-align:center;
+    padding-top:20px;
+    margin-top:40px;
+}
+.courses_container h2{
+    color:white;
+    border-bottom:solid crimson 4px;
+    padding-top:20px;
+    padding-bottom:10px;
+    display:inline-block;
+    font-size:28px;
+    font-weight:700;
+}
+
+.courses_dtl {
+    display: flex;
+    justify-content:center;
+    padding-top: 40px;
+    margin-top: 20px;
+/*    gap: 10px;*/
+    flex-wrap:wrap;
+}
+.courses_card {
+
+    width:22%;
+    min-height:290px;
+    margin:10px; 
+    background-color:white;
+    border-radius:8px;
+    overflow :hidden;
+    margin-top:20px;
+    transition: ease 0.5s;
+
+
+}
+    .courses_card:hover {
+        transform : translateY(-5px);
+    }
+    .courses_card_dic {
+        padding: 15px;
+        font-size: 14px;
+        font-weight: 800;
+        line-height: 1.7;
+    }
+        .courses_card_dic button {
+            background-color: #2c3e50;
+            color:white;
+             border-radius:8px;
+             padding:5px 10px;
+        }
+        .courses_card_dic ::selection{
+            background-color:crimson;
+            color:white;
+        }
+        .courses_card img {
+            width: 100%;
+            object-fit: cover;
+            max-height: 190px;
+        }
+
+.coderz_map{
+    text-align:center;
+}
+    .coderz_map h2 {
+
+        padding-top: 20px;
+        padding-bottom: 10px;
+
+        font-size: 28px;
+        font-weight: 700;
+    }
+    iframe {
+
+
+        margin-top:20px;
+        width: 80%;
+        box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    }
+
+footer {
+    background-color: #2c3e50;
+    text-align:center;
+    height:80px;
+    margin-top:20px;
+
+}
+    footer p {
+        color: crimson;
+        font-size:16px;
+        font-weight:700;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+       padding-top:30px;
+    }
+
+
+.up {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: ease-in-out 0.5s;
+    background-color:aqua;
+    border-radius:50%;
+    padding:10px 15px;;
+}
+
+
+
+
+
+
+@media(max-width : 900px) {
+    .service_card {
+        width: 50%;
+    }
+
+    header h1 {
+        font-size: 18px;
+    }
+
+    .courses_card {
+        width: 45%;
+    }
+    .courses_card_dic{
+        font-size:12px;
+    }
+    .courses_card_dic button{
+        padding:3px 5px;
+    }
+}
